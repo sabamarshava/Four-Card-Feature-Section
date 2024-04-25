@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  background-color: hsl(0, 0%, 98%);
+  color: hsl(229, 6%, 66%);
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 8rem 3rem 0;
+}
+
+/********************************/
+/* HEADER SECTION */
+/********************************/
+
+.header {
+  text-align: center;
+}
+
+.primary-header {
+  font-size: 3.4rem;
+  font-weight: 200;
+  color: hsl(234, 12%, 34%);
+}
+
+.primary-header span {
+  font-weight: 600;
+}
+
+.header-description {
+  max-width: 60rem;
+  margin: 2rem auto 6.4rem;
+}
+
+/********************************/
+/* MAIN SECTION */
+/********************************/
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3rem;
+}
+
+.box {
+  background-color: #fff;
+  border-radius: 7px;
+  padding: 3rem;
+  text-align: right;
+  box-shadow: 0 15px 30px -11px rgba(131, 165, 200, 0.678);
+}
+
+.box-text {
+  text-align: left;
+  padding-bottom: 5rem;
+}
+
+.box-1,
+.box-4 {
+  align-self: center;
+}
+
+.secondary-header {
+  font-size: 2rem;
+  color: hsl(234, 12%, 34%);
+  margin-bottom: 1rem;
+}
+
+.box-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.box-1 {
+  border-top: 4px solid hsl(180, 62%, 55%);
+}
+
+.box-2 {
+  border-top: 4px solid hsl(0, 78%, 62%);
+}
+
+.box-3 {
+  border-top: 4px solid hsl(34, 97%, 64%);
+}
+
+.box-4 {
+  border-top: 4px solid hsl(212, 86%, 64%);
+}
+
+@media (max-width: 56em) {
+  .main {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 39em) {
+  body {
+    font-size: 1.3rem;
+  }
+
+  .primary-header {
+    font-size: 2.2rem;
+  }
+
+  .box {
+    padding: 2rem;
+  }
+
+  .box-text {
+    padding-bottom: 3rem;
+  }
+}
